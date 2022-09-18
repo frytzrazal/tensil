@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="text-[18px] lg:text-[20px]">
   <head>
     <title>{{ title }}</title>
     <meta charset="UTF-8"/>
@@ -8,9 +8,9 @@
     {% endif %}
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/main.css?ts={% timestamp %}"/>
   </head>
-  <body>
+  <body class="text-black-olive">
     {{ content | safe }}
   </body>
 </html>
