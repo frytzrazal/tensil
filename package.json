@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "eleventy --serve"
+    "serve": "eleventy --serve & npx tailwindcss -i ./src/css/main.css -o ./_site/css/main.css --watch"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/frytzrazal/tensil#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "tailwindcss": "^3.1.8"
   }
 }
