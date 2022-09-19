@@ -11,6 +11,10 @@ module.exports = {
       colors: {
         'black-olive': '#3D3B36',
         'orange': '#DF6726',
+        'dark-green': '#0E402D',
+        'light-green': '#21A673',
+        'tensil-green': '#82A626',
+        'mint-cream': '#F4FFF7',
       },
     },
   },
