@@ -1,4 +1,10 @@
 {
+  "stats": [
+    { "name": "Bio-based material", "value": "100%" },
+    { "name": "Recyclability", "value": "100%" },
+    { "name": "Biodegradability", "value": "100%" },
+    { "name": "Production waste", "value": "0%" }
+  ],
   "contact": {
     "name": "Jay F. Sanchez",
     "email": "jsanchez372000@yahoo.com",
