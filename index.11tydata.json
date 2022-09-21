@@ -5,6 +5,20 @@
     { "name": "Biodegradability", "value": "100%" },
     { "name": "Production waste", "value": "0%" }
   ],
+  "whyUse": [
+    {
+      "reason": "It regulates moisture",
+      "description": "TENSIL Abaca Fiber Tiles absorb and emit moisture into ambient air. This results to a pleasant indoor climate which is good for both comfort and health. This also contributes to lower energy costs and reduced environmental impact.</p><p>Abaca has high pH value that discourages mould and material does not rot."
+    },
+    {
+      "reason": "It absorbs sound",
+      "description": "TENSIL Abaca Fiber Tiles improve room acoustics in a simple and modern way. The material is a good sound absorber and reduces echo in the room thereby contributing to restful acoustics."
+    },
+    {
+      "reason": "It is fireproof",
+      "description": "TENSIL Abaca Fiber Tiles provide protection to your wall and are fire resistant and type-approved as protective cladding."
+    }
+  ],
   "contact": {
     "name": "Jay F. Sanchez",
     "email": "jsanchez372000@yahoo.com",
