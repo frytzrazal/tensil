@@ -1,0 +1,16 @@
+<section class="px-8 py-12">
+  <h2 class="text-3xl font-heading mb-8 mx-8 text-center">Where to use TENSIL Abaca Fiber Tiles?</h2>
+  <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-8 max-w-screen-md mx-auto">
+    {% for item in whereToUse %}
+    <li class="aspect-square flex items-center justify-center p-4
+      bg-tensil-green text-mint-cream text-xl text-center
+      hover:bg-light-green">
+      {{ item }}
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="text-xl text-center m-4 font-heading">
+    The possibilities are
+    <span class="underline decoration-light-orange decoration-8">endless</span>
+  </p>
+</section>
