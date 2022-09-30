@@ -46,5 +46,31 @@
       "pageName": "Tensil Abaca Fiber Tiles",
       "url": ""
     }
-  }
+  },
+  "faqs": [
+    {
+      "question": "Where is your production site?",
+      "answer": "Within the premises of our abaca farm in Caramoran, Catanduanes Island"
+    },
+    {
+      "question": "What is the estimated production lead time?",
+      "answer": "Production starts once you confirm your order. Normal production lead time is <b class='whitespace-nowrap'>2 to 3 weeks</b>"
+    },
+    {
+      "question": "What are the available sizes?",
+      "answer": "20cm &#10005; 60cm<br/>15cm &#10005; 60cm<br/>30cm &#10005; 30cm<br/>All dimensions at 12mm thickness"
+    },
+    {
+      "question": "What colors are available?",
+      "answer": "Tiles come in <b>primer white</b> or <b>unpainted natural gray</b>"
+    },
+    {
+      "question": "Can I paint it?",
+      "answer": "Yes, we recommend spray paint to maintain its acoustic performance"
+    },
+    {
+      "question": "How do I install them?",
+      "answer": "Very simple: use a fairly small amount of rugby adhesive on both the fiber tile and the wall surface. For rough finishes, use either Portland cement or tile adhesive."
+    }
+  ]
 }
