@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" class="text-[18px] lg:text-[20px]">
   <head>
-    <title>{{ title }}</title>
     <meta charset="UTF-8"/>
-    {% if description %}
-      <meta name="description" content="{{ description }}"/>
-    {% endif %}
+
+    <!-- HTML Meta Tags -->
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}"/>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="{{ url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:image" content="{{ image }}">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="{{ domain }}">
+    <meta property="twitter:url" content="{{ url }}">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image" content="{{ image }}">
+
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
     <link rel="stylesheet" href="/css/main.css?ts={% timestamp %}"/>
