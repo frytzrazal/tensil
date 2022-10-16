@@ -3,3 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Menu transitions */
+
+#main-menu {
+  transition-property: max-height;
+  transition-duration: .2s;
+  transition-timing-function: ease-in;
+}
+.expanded {
+  max-height: 200px;
+  transition-property: max-height;
+  transition-duration: .2s;
+  transition-timing-function: ease-in;
+}

@@ -1,30 +1,17 @@
-<style>
-  #main-menu {
-    transition-property: max-height;
-    transition-duration: .2s;
-    transition-timing-function: ease-in;
-  }
-  .expanded {
-    max-height: 200px;
-    transition-property: max-height;
-    transition-duration: .2s;
-    transition-timing-function: ease-in;
-  }
-</style>
-
 <nav id="main-nav" class="block
   bg-mint-cream text-black-olive shadow-md sticky top-0 z-20">
-  <div class="max-w-screen-xl grid grid-cols-2 grid-flow-row p-4 mx-auto">
+  <div class="max-w-screen-xl grid grid-cols-2 md:grid-cols-[1fr_3fr] p-4 mx-auto">
     <div class="justify-self-start">
       <a class="cursor-pointer" onClick="smoothScroll('top')"><img src="/images/tensil-09.svg" class="h-8 mx-auto"/></a>
     </div>
-    <ul id="main-menu" class="order-3 text-right col-span-2 flex flex-col font-heading max-h-0 overflow-hidden">
+    <ul id="main-menu" class="order-3 text-right col-span-2 flex flex-col font-heading max-h-0 overflow-hidden
+      md:flex-row md:max-h-20 md:col-span-1 justify-self-end">
       <li class="m-2"><a class="cursor-pointer hover:underline underline-offset-4 decoration-4 decoration-tensil-green transition" onClick="smoothScroll('why-use')">Why TENSIL</a></li>
       <li class="m-2"><a class="cursor-pointer hover:underline underline-offset-4 decoration-4 decoration-tensil-green transition" onClick="smoothScroll('use-on')">Uses of TENSIL</a></li>
       <li class="m-2"><a class="cursor-pointer hover:underline underline-offset-4 decoration-4 decoration-tensil-green transition" onClick="smoothScroll('order-now')">Order TENSIL</a></li>
       <li class="m-2"><a class="cursor-pointer hover:underline underline-offset-4 decoration-4 decoration-tensil-green transition" onClick="smoothScroll('faqs')">FAQs</a></li>
     </ul>
-    <div onClick="toggleNav()">
+    <div onClick="toggleNav()" class="justify-self-end self-center md:hidden">
       H
     </div>
   </div>
