@@ -1,14 +1,34 @@
-<nav class="hidden md:block
-  bg-mint-cream text-black-olive shadow-md sticky top-0 z-10">
-  <div class="max-w-screen-xl md:flex flex-row justify-between items-center md:py-4 md:px-8 mx-auto">
-    <div>
-      <a class="cursor-pointer" onClick="smoothScroll('top')"><img src="/images/tensil-09.svg" class="h-8 mx-auto"/>
+<style>
+  #main-menu {
+    transition-property: max-height;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+  }
+  .expanded {
+    max-height: 200px;
+    transition-property: max-height;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+  }
+</style>
+
+<nav id="main-nav" class="block
+  bg-mint-cream text-black-olive shadow-md sticky top-0 z-20">
+  <div class="max-w-screen-xl grid grid-cols-2 grid-flow-row p-4 mx-auto">
+    <div class="justify-self-start">
+      <a class="cursor-pointer" onClick="smoothScroll('top')"><img src="/images/tensil-09.svg" class="h-8 mx-auto"/></a>
     </div>
-    <ul class="flex flex-row font-heading">
-      <li class="mx-3"><a class="cursor-pointer hover:underline underline-offset-4 decoration-4 decoration-tensil-green transition" onClick="smoothScroll('why-use')">Why TENSIL</a></li>
-      <li class="mx-3"><a class="cursor-pointer hover:underline underline-offset-4 decoration-4 decoration-tensil-green transition" onClick="smoothScroll('use-on')">Uses of TENSIL</a></li>
-      <li class="mx-3"><a class="cursor-pointer hover:underline underline-offset-4 decoration-4 decoration-tensil-green transition" onClick="smoothScroll('order-now')">Order TENSIL</a></li>
-      <li class="mx-3"><a class="cursor-pointer hover:underline underline-offset-4 decoration-4 decoration-tensil-green transition" onClick="smoothScroll('faqs')">FAQs</a></li>
+    <ul id="main-menu" class="order-3 text-right col-span-2 flex flex-col font-heading max-h-0 overflow-hidden">
+      <li class="m-2"><a class="cursor-pointer hover:underline underline-offset-4 decoration-4 decoration-tensil-green transition" onClick="smoothScroll('why-use')">Why TENSIL</a></li>
+      <li class="m-2"><a class="cursor-pointer hover:underline underline-offset-4 decoration-4 decoration-tensil-green transition" onClick="smoothScroll('use-on')">Uses of TENSIL</a></li>
+      <li class="m-2"><a class="cursor-pointer hover:underline underline-offset-4 decoration-4 decoration-tensil-green transition" onClick="smoothScroll('order-now')">Order TENSIL</a></li>
+      <li class="m-2"><a class="cursor-pointer hover:underline underline-offset-4 decoration-4 decoration-tensil-green transition" onClick="smoothScroll('faqs')">FAQs</a></li>
     </ul>
+    <div onClick="toggleNav()">
+      H
+    </div>
   </div>
 </nav>
+
+<div id="overlay" class="hidden absolute top-0 w-full h-full z-10 bg-black-olive bg-opacity-80"
+  onClick="toggleNav()"></div>

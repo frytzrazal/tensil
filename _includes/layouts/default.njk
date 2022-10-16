@@ -25,21 +25,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
     <link rel="stylesheet" href="/css/main.css?ts={% timestamp %}"/>
-    <script>
-      function smoothScroll(id) {
-        const elem = document.getElementById(id);
-        const headerOffset = 100;
-        const elemPos = elem.getBoundingClientRect().top;
-        const offsetPos = elemPos + window.pageYOffset - headerOffset;
-
-        window.scrollTo({
-          top: offsetPos,
-          behavior: 'smooth'
-        });
-      }
-    </script>
+    <script src="/js/scripts.js"></script>
   </head>
-  <body class="text-black-olive bg-mint-cream">
+  <body class="relative text-black-olive bg-mint-cream">
     {{ content | safe }}
   </body>
 </html>
